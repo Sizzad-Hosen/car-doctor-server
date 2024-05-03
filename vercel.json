@@ -1,19 +1,8 @@
 {
-    "name": "my-vercel-project",
+    "name": "car-doctor-server",
     "version": 2,
     "builds": [
-      {
-        "src": "public/**",
-        "use": "@vercel/static-build",
-        "config": { "zeroConfig": true }
-      }
-    ],
-    "routes": [
-      { "src": "/api/*", "dest": "/api/:path" }
-    ],
-    "env": {
-      "API_KEY": "my-api-key",
-      "DEBUG": "true"
-    }
+      { "src": "index.js", "use": "@vercel/node" }
+    ]
   }
   
